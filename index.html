@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Flying Worm</title>
+    <title>Privacy Policy – Flying Worm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -16,12 +16,20 @@
         h1, h2 {
             color: #333;
         }
-        h1 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
         }
-        ul {
-            margin-left: 20px;
+        .lang-switch button {
+            padding: 6px 12px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        .lang {
+            display: none;
+        }
+        .lang.active {
+            display: block;
         }
         footer {
             margin-top: 40px;
@@ -29,100 +37,104 @@
             color: #666;
         }
     </style>
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
+<div class="lang-switch">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('hu')">Magyar</button>
+</div>
 
-<p><strong>Effective date:</strong> January 29, 2026</p>
+<!-- ENGLISH -->
+<div id="en" class="lang active">
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective date:</strong> January 29, 2026</p>
 
-<p>
-This Privacy Policy document describes how user data is handled in the following application:
-</p>
+    <p>
+        <strong>Application name:</strong> Flying Worm<br>
+        <strong>Developer:</strong> László Szűcs<br>
+        <strong>Contact:</strong> <a href="mailto:laszlo.szucs.munka@gmail.com">laszlo.szucs.munka@gmail.com</a>
+    </p>
 
-<p>
-<strong>Application name:</strong> Flying Worm<br>
-<strong>Developer:</strong> László Szűcs<br>
-<strong>Contact:</strong> <a href="mailto:laszlo.szucs.munka@gmail.com">laszlo.szucs.munka@gmail.com</a>
-</p>
+    <h2>1. Information Collection and Use</h2>
+    <p>The application does not collect personally identifiable information.</p>
+    <ul>
+        <li>device information</li>
+        <li>app usage data</li>
+        <li>crash reports</li>
+        <li>anonymous statistical data</li>
+    </ul>
 
-<h2>1. Information Collection and Use</h2>
+    <h2>2. Third-Party Services</h2>
+    <ul>
+        <li>Google AdMob</li>
+        <li>Google Play Services</li>
+        <li>Firebase Analytics</li>
+        <li>Firebase Crashlytics</li>
+    </ul>
 
-<p>
-The application does not collect personally identifiable information such as name, email address, or phone number.
-</p>
+    <h2>3. Advertisements</h2>
+    <p>The application may display personalized or non-personalized advertisements.</p>
 
-<p>
-The application may automatically collect the following information:
-</p>
+    <h2>4. Data Security</h2>
+    <p>No method of transmission over the internet is 100% secure.</p>
 
-<ul>
-    <li>device information (such as Android version, device model)</li>
-    <li>app usage data</li>
-    <li>crash reports</li>
-    <li>anonymous statistical data</li>
-</ul>
+    <h2>5. Children’s Privacy</h2>
+    <p>The application does not knowingly collect data from children under 13.</p>
 
-<h2>2. Third-Party Services</h2>
+    <h2>6. Changes</h2>
+    <p>This Privacy Policy may be updated from time to time.</p>
+</div>
 
-<p>
-The application may use third-party services that collect information used to identify users.
-</p>
+<!-- HUNGARIAN -->
+<div id="hu" class="lang">
+    <h1>Adatvédelmi irányelvek</h1>
+    <p><strong>Hatálybalépés dátuma:</strong> 2026. január 29.</p>
 
-<p>
-These services may include:
-</p>
+    <p>
+        <strong>Alkalmazás neve:</strong> Flying Worm<br>
+        <strong>Fejlesztő:</strong> Szűcs László<br>
+        <strong>Kapcsolat:</strong> <a href="mailto:laszlo.szucs.munka@gmail.com">laszlo.szucs.munka@gmail.com</a>
+    </p>
 
-<ul>
-    <li>Google AdMob (for displaying advertisements)</li>
-    <li>Google Play Services</li>
-    <li>Firebase Analytics</li>
-    <li>Firebase Crashlytics</li>
-</ul>
+    <h2>1. Gyűjtött adatok</h2>
+    <p>Az alkalmazás nem gyűjt személyesen azonosítható adatokat.</p>
+    <ul>
+        <li>eszközinformációk</li>
+        <li>használati adatok</li>
+        <li>összeomlási adatok</li>
+        <li>anonim statisztikák</li>
+    </ul>
 
-<p>
-These third-party service providers have their own privacy policies.
-</p>
+    <h2>2. Harmadik felek szolgáltatásai</h2>
+    <ul>
+        <li>Google AdMob</li>
+        <li>Google Play Services</li>
+        <li>Firebase Analytics</li>
+        <li>Firebase Crashlytics</li>
+    </ul>
 
-<h2>3. Advertisements</h2>
+    <h2>3. Hirdetések</h2>
+    <p>Az alkalmazás hirdetéseket jeleníthet meg.</p>
 
-<p>
-The application may display advertisements.
-Advertisements may be personalized or non-personalized depending on the user’s location and settings.
-</p>
+    <h2>4. Adatbiztonság</h2>
+    <p>Az internetes adatátvitel nem 100%-ban biztonságos.</p>
 
-<h2>4. Data Security</h2>
+    <h2>5. Gyermekek adatvédelme</h2>
+    <p>Az alkalmazás nem gyűjt adatokat 13 év alatti gyermekektől.</p>
 
-<p>
-We strive to use commercially acceptable means of protecting user data; however, no method of transmission over the internet or method of electronic storage is 100% secure.
-</p>
-
-<h2>5. Children’s Privacy</h2>
-
-<p>
-The application does not knowingly collect personal information from children under the age of 13.
-If we become aware that a child has provided personal information, we will take steps to delete such information immediately.
-</p>
-
-<h2>6. Changes to This Privacy Policy</h2>
-
-<p>
-We may update our Privacy Policy from time to time.
-Any changes will be posted on this page.
-</p>
-
-<h2>7. Contact Us</h2>
-
-<p>
-If you have any questions about this Privacy Policy, please contact us:
-</p>
-
-<p>
-📧 <a href="mailto:laszlo.szucs.munka@gmail.com">laszlo.szucs.munka@gmail.com</a>
-</p>
+    <h2>6. Módosítások</h2>
+    <p>Az adatvédelmi irányelvek időről időre frissülhetnek.</p>
+</div>
 
 <footer>
-    <p>© 2026 Flying Worm</p>
+    © 2026 Flying Worm
 </footer>
 
 </body>
